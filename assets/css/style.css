@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "SourceSansPro-Black";
+	src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf");
+}
+
+@font-face {
+	font-family: "Merriweather-LightItalic";
+	src: url("../fonts/Merriweather/Merriweather-LightItalic.ttf");
+}
+
+
+body {
+	background-image: url("../../images/bg.jpg");
+}
+
+/*-------------------------Header------------------------------*/
+
+header h1, h2 {
+	color: #ffffff;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'SourceSansPro-Black', sans-serif;
+}
+
+h2 {
+	font-family: 'Merriweather-LightItalic', serif;
+	}
+
+h3 {
+	font-family: 'SourceSansPro', sans-serif;
+}
