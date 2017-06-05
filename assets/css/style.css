@@ -1,3 +1,6 @@
+/* Carole et Léa 
+--> Header, Navbar, Main, Featured Post, "Full story"button, Older Post, Barre de pagination, Footer, Partie formulaire, Bouton SendMessage, Partie coordonnées, Réseaux sociaux, Copyright */
+
 @font-face {
 	font-family: "SourceSansPro-Black";
 	src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf");
@@ -18,19 +21,6 @@
     src: url("../fonts/fonts/FontAwesome.otf");
 }
 
-.introlink {
-    border-bottom: 1px dotted;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-a:hover {
-    text-decoration: none;
-    border-bottom: none;
-    color: #18bfef;
-    transition: color 0.5s, border 0.5s;
-}
-
 .col-lg-12 {
     background-image: url(../img/bg.jpg);
     background-size: cover;
@@ -38,6 +28,7 @@ a:hover {
     background-attachment: fixed;
     margin-top: -10px;
 }
+
 /*-------------------------Header------------------------------*/
 
 h1, h2 {
@@ -63,6 +54,19 @@ h2 {
     font-weight: 100;
     line-height: 2.3;
     margin-bottom: 3rem;
+}
+
+.introlink {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: #18bfef;
+    transition: color 0.5s, border 0.5s;
 }
 
 .fa-arrow-down {
@@ -164,11 +168,19 @@ ul, li {
     margin-right: auto;
 }
 
+/*-------------------------Featured Post------------------------------*/
+
 .featuredpost {
     text-align: center;
     padding-top: 9%;
 }
 
+.date1 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Merriweather-Light', serif;
+    margin-bottom: 70px;
+}
 
 h3 {
 	font-family: 'SourceSansPro-Black', sans-serif;
@@ -184,43 +196,11 @@ h3:hover {
     transition: color 0.5s, border 0.5s;  
 }
 
-.date1 {
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Merriweather-Light', serif;
-    margin-bottom: 70px;
-}
-
-.date {
-    text-align: center;
-    font-size: 12px;
-    font-family: 'Merriweather-Light', serif;
-    margin-bottom: 20px;
-}
-
 .txt1 {
     font-family: 'Merriweather-LightItalic', serif;
     font-size: 16px;
     line-height: 35px;
     margin : 3.5%;
-}
-
-.txt {
-    font-family: 'Merriweather-Light', serif;
-    font-size: 15px;
-    text-align: justify;
-    width: 96%;
-    margin-left: 10px;
-    line-height: 35px;
-    margin-bottom: 50px;
-}
-
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 .zoom {
@@ -234,38 +214,14 @@ h3:hover {
 
 .zoom img {
     max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .zoom:hover img {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
-.zoom2 {
-    position: relative;
-    overflow: hidden;
-    width: 457.2px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7.4%;
-}
-
-.zoom2 img {
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.zoom2:hover img {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
+/*-------------------------"Full story"button------------------------------*/
 
 .fullstory {
     color: #212931;
@@ -276,6 +232,14 @@ h3:hover {
     padding: 15px 30px;
     border: 2px solid;
     border-color: #212931;
+}
+
+.fullstory:hover {
+    text-decoration: none;
+    border-bottom: 2px solid;
+    color: #18bfef;
+    border-color: #18bfef;
+    transition: color 0.5s, border 0.3s;
 }
 
 .fullstory1 {
@@ -297,12 +261,11 @@ h3:hover {
     transition: color 0.5s, border 0.3s;
 }
 
-.fullstory:hover {
-    text-decoration: none;
-    border-bottom: 2px solid;
-    color: #18bfef;
-    border-color: #18bfef;
-    transition: color 0.5s, border 0.3s;
+/*-------------------------Older Post------------------------------*/
+
+.olderpost {
+    text-align: center;
+    width: 100%;
 }
 
 .col-lg-5 {
@@ -314,9 +277,11 @@ h3:hover {
     margin: 100px 4px 0px;
 }
 
-.olderpost {
+.date {
     text-align: center;
-    width: 100%;
+    font-size: 12px;
+    font-family: 'Merriweather-Light', serif;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -331,6 +296,34 @@ h4 {
 h4:hover {
     color: #18bfef;
     transition: color 0.5s, border 0.5s;  
+}
+
+.zoom2 {
+    position: relative;
+    overflow: hidden;
+    width: 457.2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7.4%;
+}
+
+.zoom2 img {
+    max-width: 100%;
+    transition: all 0.3s;
+}
+
+.zoom2:hover img {
+    transform: scale(1.05);
+}
+
+.txt {
+    font-family: 'Merriweather-Light', serif;
+    font-size: 15px;
+    text-align: justify;
+    width: 96%;
+    margin-left: 10px;
+    line-height: 35px;
+    margin-bottom: 50px;
 }
 
 /*---------------- Barre de pagination --------------------*/
