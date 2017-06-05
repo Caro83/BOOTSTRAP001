@@ -329,3 +329,261 @@ h4:hover {
     color: #18bfef;
     transition: color 0.5s, border 0.5s;  
 }
+
+/*---------------- Barre de pagination --------------------*/
+
+.nav_pages {
+    width: 1538px;
+    height: 236px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nav_pages ul {
+    margin: auto;
+}
+
+.nav_pages li {
+    width: 65px;
+    height: 65px;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-top: 2px solid #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
+    text-align: center;
+    line-height: 65px;
+    font-family: 'SourceSansPro-Black';
+    font-size: 18px;
+}
+
+#trois_points {
+    color: #e2e2e2;
+}
+
+#trois_points:hover, #trois_points:active {
+    color: #e2e2e2;
+    border-color: #e2e2e2;
+}
+.pagination a {
+    color: #000000;
+}
+
+.nav_pages li:last-child {
+    border-right: 2px solid #e2e2e2;
+    width: 143px;
+}
+
+.active {
+    background-color: #eeeeee;
+}
+
+.nav_pages li:hover {
+    border-color: #18BFEF;
+}
+
+/*---------------- Footer--------------------*/
+
+footer {
+
+    width: 1538px;
+    height: 790px;
+    background-color: #f5f5f5;
+    margin : 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------------- Partie formulaire --------------------*/
+
+form { /* Bloc englobant les blocs formulaires */
+    width: 767px;
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    }
+
+.name {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    margin-top: 10%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    margin-top: 10%;
+    margin-top: -2px;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+label {
+    color: #717981;
+    font-family: 'SourceSansPro-Black';
+    font-size: 18px;
+    margin-left: 12%;
+
+}
+
+input { 
+    height: 63px;
+    width: 598px;
+    margin: auto 12%;
+    padding: 2% 0;
+    border: 2px solid #e2e2e2;
+    background-color: #f5f5f5; 
+}
+
+textarea {
+    height: 198px;
+    width:598px;
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+    background-color: #f5f5f5;
+    border: 2px solid #e2e2e2; 
+    background-color: #f5f5f5; 
+
+}
+
+/*---------------- Bouton SEND MESSAGE --------------------*/
+
+.message button {
+    height: 62px;
+    width: 216px;
+    margin-left: 12%;
+    margin-bottom: 8%;
+    font-family: 'SourceSansPro-Black';
+    border: 2px solid #717981;
+    font-size: 18px;
+    background-color: #f5f5f5; 
+}
+.message a {
+    color: #717981;
+}
+
+.message a:hover {
+    color: #18BFEF;
+}
+
+button:hover {
+    border-color: #18BFEF;
+    color: ##18BFEF;
+}
+
+/*---------------- Partie coordonnées--------------------*/
+
+
+
+.informations { /* Bloc englobant les blocs Address, phone, email et social */
+    width: 767px;
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coordonnees { 
+    margin: 0;
+    height: 25%;
+    display: flex;
+    border-left: 2px solid #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.coordonnees p, .coordonnees a {
+    color: #969498;
+    font-family: 'Merriweather-Light';
+    margin: auto 0;
+}
+
+.coordonnees a {
+    border-bottom: 1px dotted #717981;
+}
+
+.coordonnees a:hover {
+    text-decoration: none;
+    color: #18BFEF; 
+    border-bottom: 0px;
+}
+
+address {
+    color: #969498;
+    font-family: 'Merriweather-Light';
+    margin: auto -15px;
+}
+h5 {
+    color: #717981;
+    font-family: 'SourceSansPro-Black';
+    font-size: 18px;
+    margin: auto 12%;
+}
+
+/*---------------- Réseaux sociaux --------------------*/
+
+.social {
+    /*margin: 0;*/
+    height: 25%;
+    display: flex;
+    border-left: 2px solid #e2e2e2;
+}
+
+}
+.informations ul {
+    margin: 0 -20px 0 0;
+}
+
+.informations li {
+    width: 45px;
+    height:45px;
+    list-style: none;
+    border: 2px solid #e2e2e2;
+    margin: 75px 5px;
+    font-family: 'fontAwesome';
+    border-radius: 100%;
+    display: inline-flex;
+    padding-left: 0 50px;
+}   
+
+
+.social li:hover {
+    border-color: #18BFEF;
+}
+
+/*---------------- Barre de Copyright --------------------*/
+
+.copyright {
+    color: #50575C;
+    text-align: center;
+    font-family: 'SourceSansPro-Black';
+    font-size: 18px;
+    word-spacing: 5pt;  
+}
+
+.copyright ul {
+    margin: 50px auto;
+    width: 40%;
+    list-style: none;
+    display: flex;
+}
+
+.copyright li {
+    padding: 0 10px 0 10px;
+    flex-direction: row;
+}
+
+.copyright a  {
+    color: #50575C;
+    border-bottom: 1px dotted #717981;
+}
+.copyright a:hover {
+    text-decoration: none;
+    color: #18BFEF;
+    border-bottom: 0px;
+}
