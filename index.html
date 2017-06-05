@@ -100,46 +100,80 @@
             </div>
         </div>
         
-        <!-- ----------------------------------------------------------------------------------- -->
-        
-		<div class="pages"></div> <!-- Pas d'idées actuellement pour le nom de la balise répertoriant les pages -->
-	
+ 	<section class="nav_pages">
+		<ul class="pagination">
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li id="trois_points">...</li>
+			<li><a href="#">8</a></li>
+			<li><a href="#">9</a></li>
+			<li><a href="#">10</a></li>
+			<li><a href="#">Next</a></li>
+		</ul>
+	</section>
 
 	<footer>
 		<section>
-			<form></form> <!-- balises du formulaire à intégrer -->
+			<form method="post" action="#">
+				
+				<div class='name'>
+					<label for="name"><span>NAME</span></label>
+					<input type="text" name="name" id="name" />
+				</div>
+
+				
+				<div class="email">
+					<label for="email"><span>EMAIL<span></label>
+					<input type="email" name="email" id="email" />
+				</div>
+
+				<div class="message">
+					<label for="message">MESSAGE</label>
+					<textarea></textarea>
+					<button><a href="#">SEND MESSAGE</a></button>
+				</div>
+			</form>
 		</section>
 
-		<section>
-			<section>
+		<section class="informations">
+			<div class="coordonnees">
 				<h3>ADDRESS</h3>
-				<address>234 Somewhere Road #87257 Nashville, TN 00000-0000</address>
-			</section>
+				<address>1234 Somewhere Road #87257 
+				</br> Nashville, TN 00000-0000</address>
+			</div>
 
-			<section>
+			<div class="coordonnees">
 				<h3>PHONE</h3>
-				<p>(000) 000-0000</p>
-			</section>
+				<a href="#">(000) 000-0000</a>
+			</div>
 
-			<section>
+			<div class="coordonnees">
 				<h3>EMAIL</h3>
-				<p>info@untitled.tld</p>
-			</section>
+				<a href="#">info@untitled.tld</a>
+			</div>
 
-			<section>
+			<div class="social">
 				<h3>SOCIAL</h3>
 				<ul>
-					 <!-- Liste des réseaux sociaux -->
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-github "></i></a></li>
 				</ul>
-			</section>
+			</div>
 
 		</section>
 	</footer>
-    </div>
+	
+		<div class="copyright">
+			<ul>
+			<li>&#9400; UNTITLED </li> 
+			<li>| DESIGN: <a href="#">HTML5 UP</a></li>
+			<li>| DEMO IMAGES: <a href="#">UNSPLASH</a></li>
 
-	<div>
-		<p></p>
-	</div>
+		</div>
+	
 
 </body>
 </html>
