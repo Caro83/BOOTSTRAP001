@@ -18,13 +18,10 @@
     src: url("../fonts/fonts/FontAwesome.otf");
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff; 
-}
-
 .introlink {
     border-bottom: 1px dotted;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 a:hover {
@@ -112,6 +109,8 @@ ul, li {
     border-bottom: none;
     height: 64px;
     padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .menu:hover {
@@ -139,6 +138,8 @@ ul, li {
 .sociallink{
     border-bottom: none;
     margin: 2rem;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /*-------------------------Main------------------------------*/
@@ -174,6 +175,8 @@ h3 {
     font-size: 6.5rem;
     letter-spacing: 4px;
     color: #212931;
+    width: 60%;
+    margin: 0 auto;
 }
 
 h3:hover {
@@ -332,9 +335,17 @@ h4:hover {
 
 /*---------------- Barre de pagination --------------------*/
 
+.col-lg-4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0% 12% 0% 0%; 
+    margin-bottom: 10%;
+}
+
 .nav_pages {
-    width: 1538px;
-    height: 236px;
+    width: 60%;
+    height: 45%;
     background-color: #ffffff;
     margin: 0 auto;
     display: flex;
@@ -345,33 +356,52 @@ h4:hover {
 }
 
 .nav_pages li {
-    width: 65px;
-    height: 65px;
+    width: 60%;
+    height: 45%;
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2;
     border-top: 2px solid #e2e2e2;
     border-bottom: 2px solid #e2e2e2;
     text-align: center;
     line-height: 65px;
-    font-family: 'SourceSansPro-Black';
-    font-size: 18px;
+    font-family: 'Source Sans Pro';
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0px -60px 0px 60px;
+}
+
+.nav_pages a {
+    text-decoration: none;
+    color: #212931;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nav_pages a:hover {
+    color: #18bfef;
+    transition: color 0.5s, border 0.5s;
 }
 
 #trois_points {
     color: #e2e2e2;
+    text-align: center;
+    padding-left: 5%;
+    width: 40%;
 }
 
 #trois_points:hover, #trois_points:active {
     color: #e2e2e2;
     border-color: #e2e2e2;
 }
+
 .pagination a {
     color: #000000;
 }
 
 .nav_pages li:last-child {
     border-right: 2px solid #e2e2e2;
-    width: 143px;
+    width: 100%;
 }
 
 .active {
@@ -385,8 +415,7 @@ h4:hover {
 /*---------------- Footer--------------------*/
 
 footer {
-
-    width: 1538px;
+    width: 100%;
     height: 790px;
     background-color: #f5f5f5;
     margin : 0 auto;
@@ -395,13 +424,18 @@ footer {
     flex-direction: row;
 }
 
+.col-lg-6 {
+    display: inline-block;
+}
+
 /*---------------- Partie formulaire --------------------*/
 
 form { /* Bloc englobant les blocs formulaires */
-    width: 767px;
+    width: 105%;
     height: 790px;
     display: flex;
     flex-direction: column;
+    margin-left: -2%;
     }
 
 .name {
@@ -426,16 +460,18 @@ form { /* Bloc englobant les blocs formulaires */
 
 label {
     color: #717981;
-    font-family: 'SourceSansPro-Black';
-    font-size: 18px;
-    margin-left: 12%;
+    font-family: 'Source Sans Pro';
+    font-size: 13.5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 3%;
 
 }
 
 input { 
     height: 63px;
-    width: 598px;
-    margin: auto 12%;
+    width: 70%;
+    margin: auto 3%;
     padding: 2% 0;
     border: 2px solid #e2e2e2;
     background-color: #f5f5f5; 
@@ -443,8 +479,8 @@ input {
 
 textarea {
     height: 198px;
-    width:598px;
-    margin-left: 12%;
+    width: 70%;
+    margin-left: 3%;
     margin-top: 2%;
     margin-bottom: 8%;
     background-color: #f5f5f5;
@@ -456,13 +492,16 @@ textarea {
 /*---------------- Bouton SEND MESSAGE --------------------*/
 
 .message button {
-    height: 62px;
-    width: 216px;
-    margin-left: 12%;
+    height: 50px;
+    width: 30%;
+    margin-left: 3%;
     margin-bottom: 8%;
-    font-family: 'SourceSansPro-Black';
+    margin-top: 15px;
+    font-family: 'Source Sans Pro';
+    font-size: 13.5px;
+    font-weight: bold;
+    letter-spacing: 1px;
     border: 2px solid #717981;
-    font-size: 18px;
     background-color: #f5f5f5; 
 }
 .message a {
@@ -475,15 +514,14 @@ textarea {
 
 button:hover {
     border-color: #18BFEF;
-    color: ##18BFEF;
+    color: #18BFEF;
 }
 
 /*---------------- Partie coordonnées--------------------*/
 
 
-
 .informations { /* Bloc englobant les blocs Address, phone, email et social */
-    width: 767px;
+    width: 103.8%;
     height: 790px;
     display: flex;
     flex-direction: column;
@@ -516,13 +554,16 @@ button:hover {
 address {
     color: #969498;
     font-family: 'Merriweather-Light';
-    margin: auto -15px;
+    margin: 85px -15px;
+    height: 40px;
 }
 h5 {
     color: #717981;
-    font-family: 'SourceSansPro-Black';
-    font-size: 18px;
+    font-family: 'Source Sans Pro';
+    font-size: 13.5px;
     margin: auto 12%;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /*---------------- Réseaux sociaux --------------------*/
@@ -536,24 +577,28 @@ h5 {
 
 }
 .informations ul {
-    margin: 0 -20px 0 0;
+    margin: 0 -40px 0 0;
 }
 
 .informations li {
     width: 45px;
-    height:45px;
+    height: 45px;
     list-style: none;
     border: 2px solid #e2e2e2;
     margin: 75px 5px;
     font-family: 'fontAwesome';
     border-radius: 100%;
     display: inline-flex;
-    padding-left: 0 50px;
+    padding: 10px 14px;
 }   
-
 
 .social li:hover {
     border-color: #18BFEF;
+    transition: color 0.5s, border 0.3s;
+}
+
+.social2 {
+    color: #717981;
 }
 
 /*---------------- Barre de Copyright --------------------*/
@@ -563,12 +608,12 @@ h5 {
     text-align: center;
     font-family: 'SourceSansPro-Black';
     font-size: 18px;
-    word-spacing: 5pt;  
+    word-spacing: 5pt;
 }
 
 .copyright ul {
     margin: 50px auto;
-    width: 40%;
+    width: 50%;
     list-style: none;
     display: flex;
 }
